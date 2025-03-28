@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de la unidad</title>
+    <script src="funciones.js"></script>
+</head>
+<body bgcolor="#72FF19">
+
+  
+    <center><h1><b>EMPRESA POWERLT</b></h1></center>
+    <center><h2><b>NOMINA DE EMPLEADO</b></h2></center>
+    <center><h1><b>TRABAJADOR: FIDEL</b></h1></center>
+     
+    <table id="miTabla" border="3">
+      
+        <thead>
+
+             <tr style="background-color: rgb(242, 110, 15);">
+                <th>NO.</th>
+                <th>CLAVE</th>
+                <th>NOMBRE</th>
+                <th>CORREO</th>
+                <th>FECHA DE NACIMIENTO</th>
+                <th>SEXO</th>
+                <th>SUELDO X DIA</th>
+                <th>DIAS TRABAJADOS</th>
+                <th>BONO</th>
+                <th>BOTON</th>
+                <th>DESCUENTO (7%)</th>
+                <th>SUELDO NETO</th>
+            </tr>
+        </thead>
+        </tbody>
+            <tr>
+                <td>1</td>
+                <td><input type="text" id="clave1"></td>
+                <td><input type="text" id="nombre1"></td>
+                <td><input type="text" id="correo1"></td>
+                <td><input type="date" id="fechaNacimiento1"></td>
+                <td><input type="text" id="sexo1"></td>
+                <td><input type="number" id="sueldoDia1"></td>
+                <td><input type="number" id="diasTrabajados1"></td>
+                <td><input type="number" id="bono1"></td>
+                <td><button onclick="calcular(1)">Calcular</button></td>
+                <td id="descuento1"></td>
+                <td id="sueldoNeto1"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><input type="text" id="clave2"></td>
+                <td><input type="text" id="nombre2"></td>
+                <td><input type="text" id="correo2"></td>
+                <td><input type="date" id="fechaNacimiento2"></td>
+                <td><input type="text" id="sexo2"></td>
+                <td><input type="number" id="sueldoDia2"></td>
+                <td><input type="number" id="diasTrabajados2"></td>
+                <td><input type="number" id="bono2"></td>
+                <td><button onclick="calcular(2)">Calcular</button></td>
+                <td id="descuento2"></td>
+                <td id="sueldoNeto2"></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><input type="text" id="clave3"></td>
+              <td><input type="text" id="nombre3"></td>
+              <td><input type="text" id="correo3"></td>
+              <td><input type="date" id="fechaNacimiento3"></td>
+              <td><input type="text" id="sexo3"></td>
+              <td><input type="number" id="sueldoDia3"></td>
+              <td><input type="number" id="diasTrabajados3"></td>
+              <td><input type="number" id="bono3"></td>
+              <td><button onclick="calcular(3)">Calcular</button></td>
+              <td id="descuento3"></td>
+              <td id="sueldoNeto3"></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><input type="text" id="clave4"></td>
+            <td><input type="text" id="nombre4"></td>
+            <td><input type="text" id="correo4"></td>
+            <td><input type="date" id="fechaNacimiento4"></td>
+            <td><input type="text" id="sexo4"></td>
+            <td><input type="number" id="sueldoDia4"></td>
+            <td><input type="number" id="diasTrabajados4"></td>
+            <td><input type="number" id="bono4"></td>
+            <td><button onclick="calcular(4)">Calcular</button></td>
+            <td id="descuento4"></td>
+            <td id="sueldoNeto4"></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td><input type="text" id="clave5"></td>
+          <td><input type="text" id="nombre5"></td>
+          <td><input type="text" id="correo5"></td>
+          <td><input type="date" id="fechaNacimiento5"></td>
+          <td><input type="text" id="sexo5"></td>
+          <td><input type="number" id="sueldoDia5"></td>
+          <td><input type="number" id="diasTrabajados5"></td>
+          <td><input type="number" id="bono5"></td>
+          <td><button onclick="calcular(5)">Calcular</button></td>
+          <td id="descuento5"></td>
+          <td id="sueldoNeto5"></td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td><input type="text" id="clave6"></td>
+        <td><input type="text" id="nombre6"></td>
+        <td><input type="text" id="correo6"></td>
+        <td><input type="date" id="fechaNacimiento6"></td>
+        <td><input type="text" id="sexo6"></td>
+        <td><input type="number" id="sueldoDia6"></td>
+        <td><input type="number" id="diasTrabajados6"></td>
+        <td><input type="number" id="bono6"></td>
+        <td><button onclick="calcular(6)">Calcular</button></td>
+        <td id="descuento6"></td>
+        <td id="sueldoNeto6"></td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td><input type="text" id="clave7"></td>
+      <td><input type="text" id="nombre7"></td>
+      <td><input type="text" id="correo7"></td>
+      <td><input type="date" id="fechaNacimiento7"></td>
+      <td><input type="text" id="sexo7"></td>
+      <td><input type="number" id="sueldoDia7"></td>
+      <td><input type="number" id="diasTrabajados7"></td>
+      <td><input type="number" id="bono7"></td>
+      <td><button onclick="calcular(7)">Calcular</button></td>
+      <td id="descuento7"></td>
+      <td id="sueldoNeto7"></td>
+    </tr>
+    <tr>
+    <td>8</td>
+    <td><input type="text" id="clave8"></td>
+    <td><input type="text" id="nombre8"></td>
+    <td><input type="text" id="correo8"></td>
+    <td><input type="date" id="fechaNacimiento8"></td>
+    <td><input type="text" id="sexo8"></td>
+    <td><input type="number" id="sueldoDia8"></td>
+    <td><input type="number" id="diasTrabajados8"></td>
+    <td><input type="number" id="bono8"></td>
+    <td><button onclick="calcular(8)">Calcular</button></td>
+    <td id="descuento8"></td>
+    <td id="sueldoNeto8"></td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td><input type="text" id="clave9"></td>
+      <td><input type="text" id="nombre9"></td>
+      <td><input type="text" id="correo9"></td>
+      <td><input type="date" id="fechaNacimiento9"></td>
+      <td><input type="text" id="sexo9"></td>
+      <td><input type="number" id="sueldoDia9"></td>
+      <td><input type="number" id="diasTrabajados9"></td>
+      <td><input type="number" id="bono9"></td>
+      <td><button onclick="calcular(9)">Calcular</button></td>
+      <td id="descuento9"></td>
+      <td id="sueldoNeto9"></td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td><input type="text" id="clave10"></td>
+      <td><input type="text" id="nombre10"></td>
+      <td><input type="text" id="correo10"></td>
+      <td><input type="date" id="fechaNacimiento10"></td>
+      <td><input type="text" id="sexo10"></td>
+      <td><input type="number" id="sueldoDia10"></td>
+      <td><input type="number" id="diasTrabajados10"></td>
+      <td><input type="number" id="bono10"></td>
+      <td><button onclick="calcular(10)">Calcular</button></td>
+      <td id="descuento10"></td>
+      <td id="sueldoNeto10"></td>
+    </tr>
+    
+    
+    </table>
+    <input type="button" name="btn1" id="btn1" value="Calcular" onclick="cal1()">
+    <input type="number" name="txtcal1" id="txtcal1">
+    
+
+    <input type="button" value="Limpiar Tabla" onclick="limpiarTabla()"> 
+     
+  
+</body>
+</html>
